@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Calculator</title>
+  <link rel="stylesheet" href="C:\Users\Shaik Riyaz Basha\OneDrive\Desktop\riyaz\css.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding-top: 40px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .calculator {
+      /* Your existing calculator styles will go here from style.css */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Calculator</h1>
+
+  <div class="calculator">
+    <input type="text" id="display" class="display" disabled />
+    <div class="buttons">
+      <button class="btn clear" onclick="clearDisplay()">C</button>
+      <button class="btn operator" onclick="appendSymbol('/')">÷</button>
+      <button class="btn operator" onclick="appendSymbol('*')">×</button>
+      <button class="btn operator" onclick="appendSymbol('-')">−</button>
+
+      <button class="btn" onclick="appendSymbol('7')">7</button>
+      <button class="btn" onclick="appendSymbol('8')">8</button>
+      <button class="btn" onclick="appendSymbol('9')">9</button>
+      <button class="btn operator" onclick="appendSymbol('+')">+</button>
+
+      <button class="btn" onclick="appendSymbol('4')">4</button>
+      <button class="btn" onclick="appendSymbol('5')">5</button>
+      <button class="btn" onclick="appendSymbol('6')">6</button>
+      <button class="btn equal" onclick="calculate()">=</button>
+
+      <button class="btn" onclick="appendSymbol('1')">1</button>
+      <button class="btn" onclick="appendSymbol('2')">2</button>
+      <button class="btn" onclick="appendSymbol('3')">3</button>
+      
+      <button class="btn" onclick="appendSymbol('0')">0</button>
+      <button class="btn" onclick="appendSymbol('.')">.</button>
+    </div>
+  </div>
+
+  <script src="C:\Users\Shaik Riyaz Basha\OneDrive\Desktop\riyaz\script.js"></script>
+</body>
+</html>
