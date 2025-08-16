@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management - Books</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="members.html">Members</a>
+    <a href="issue-return.html">Issue/Return</a>
+    <a href="reports.html">Reports</a>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+
+  <section class="books">
+    <h1>📚 Book Management</h1>
+
+    <form id="book-form">
+      <input type="hidden" id="editIndex">
+      <input type="text" id="title" placeholder="Book Title" required>
+      <input type="text" id="author" placeholder="Author" required>
+      <input type="text" id="category" placeholder="Category" required>
+      <button type="submit">Add Book</button>
+    </form>
+
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="Search by title or author">
+      <select id="filterAvailability">
+        <option value="all">All</option>
+        <option value="available">Available</option>
+        <option value="issued">Issued</option>
+      </select>
+    </div>
+
+    <h2>All Books</h2>
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Category</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Library Management System</p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="books.js"></script>
+</body>
+</html>

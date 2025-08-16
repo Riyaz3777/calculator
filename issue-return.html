@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management - Issue & Return</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="members.html">Members</a>
+    <a href="issue-return.html">Issue/Return</a>
+    <a href="reports.html">Reports</a>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+
+  <section class="issue-return">
+    <h1>📖 Book Issue & Return</h1>
+
+    <form id="issue-form">
+      <select id="memberSelect" required></select>
+      <select id="bookSelect" required></select>
+      <input type="date" id="dueDate" required>
+      <button type="submit">Issue Book</button>
+    </form>
+
+    <h2>Issued Books</h2>
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Member</th>
+          <th>Book</th>
+          <th>Issue Date</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="issue-list"></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Library Management System</p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="issue-return.js"></script>
+</body>
+</html>

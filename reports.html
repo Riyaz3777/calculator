@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management - Reports</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="members.html">Members</a>
+    <a href="issue-return.html">Issue/Return</a>
+    <a href="reports.html">Reports</a>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="reports">
+    <h1>📊 Library Reports & Analytics</h1>
+
+    <div class="summary">
+      <p>Total Books: <span id="totalBooks">0</span></p>
+      <p>Available Books: <span id="availableBooks">0</span></p>
+      <p>Issued Books: <span id="issuedBooks">0</span></p>
+      <p>Total Members: <span id="totalMembers">0</span></p>
+    </div>
+
+    <h2>Books by Category</h2>
+    <canvas id="categoryChart" width="400" height="200"></canvas>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Library Management System</p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="reports.js"></script>
+</body>
+</html>
