@@ -24,14 +24,26 @@ body.dark {
   color: #f5f5f5;
 }
 
-body.dark h1, body.dark h2, body.dark h3 {
-  color: #ffffff;
+/* Headings in dark mode */
+body.dark h1,
+body.dark h2 {
+  color: #000000; /* white for general headings */
 }
 
-body.dark p, body.dark td, body.dark th {
+/* Reports section headings, text, and numbers */
+body.dark section.reports h3,
+body.dark section.reports p,
+body.dark section.reports span {
+  color: #000000; /* black for Reports section */
+}
+
+/* Paragraphs, table text in dark mode */
+body.dark td,
+body.dark th {
   color: #e0e0e0;
 }
 
+/* Tables in dark mode */
 body.dark table {
   background: #1e1e1e;
 }
@@ -44,14 +56,19 @@ body.dark table tr:hover {
   background: #444;
 }
 
+/* Dark mode Reports section background */
+body.dark section.reports {
+  background: #fddb92; /* light so black text is readable */
+}
+
 /* =========================
    Navbar - Boxed Links
 ========================= */
 .navbar {
   display: flex;
-  justify-content: center; /* center all items */
+  justify-content: center;
   align-items: center;
-  gap: 1rem; /* spacing between links */
+  gap: 1rem;
   padding: 1rem;
   background: linear-gradient(90deg, #ff416c, #ff4b2b);
   border-radius: 0 0 20px 20px;
@@ -63,9 +80,9 @@ body.dark table tr:hover {
 
 .navbar a, #theme-toggle {
   display: inline-block;
-  padding: 0.6rem 1.2rem;       /* inside spacing to look like a box */
-  border-radius: 10px;           /* rounded corners */
-  background: rgba(255,255,255,0.1); /* semi-transparent box */
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
   color: white;
   font-weight: 600;
   text-decoration: none;
@@ -74,8 +91,8 @@ body.dark table tr:hover {
 }
 
 .navbar a:hover, #theme-toggle:hover {
-  background: rgba(255,255,255,0.3); /* brighter on hover */
-  transform: scale(1.05);            /* slight zoom effect */
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.05);
   box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
 }
 
